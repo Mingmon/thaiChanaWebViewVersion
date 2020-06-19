@@ -14,12 +14,12 @@ class GoToUrl : AppCompatActivity() {
         setContentView(R.layout.activity_go_to_url)
 
         var url: String = intent.getStringExtra("url")
-        var shopId: String = intent.getStringExtra("shopId")
+       // var shopId: String = intent.getStringExtra("shopId")
 
 //        textView.text = url
 //        textView2.text = shopId
 
-        Log.i("tag","$url and $shopId")
+        Log.i("tag","$url")
 
 
         myWebView.webViewClient = object : WebViewClient(){

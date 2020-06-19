@@ -1,8 +1,10 @@
 package com.example.webview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -43,7 +45,17 @@ class HistoryActivity : AppCompatActivity(), clickitemListener {
         })
     }
 
-    override fun onItemClick(iten: Shop, position: Int) {
+    override fun onItemClick(item: Shop, position: Int) {
         Log.i("tag","clickedddddd")
+
+        val url = "https://qr.thaichana.com/?appId=0001&shopId=${item.shopId}"
+
+        Toast.makeText(this,url, Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this,GoToUrl::class.java)
+
+        intent.putExtra("url",url)
+        startActivity(intent)
+
     }
 }
