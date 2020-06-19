@@ -48,27 +48,19 @@
 
         <Button
             android:id="@+id/history"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:background="@color/colorPrimaryDark"
             android:text="@string/history"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:src="@drawable/ic_add_black_24dp"
-            app:backgroundTint="@color/colorAccent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:id="@+id/add"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:background="@color/colorPrimaryDark"
             android:text="check"
             android:textColor="@android:color/white"
